@@ -1,0 +1,14 @@
+.portfolioMobile{
+    background-color: #fff;
+    padding-bottom: 0rem;
+}
+
+.portfolioMobile .titulo{
+    font-size: 5vh;
+    margin-bottom: 0.8rem;
+    padding: 2rem 2rem 0rem;
+}
+
+.portfolioMobile .texto{
+    padding: 0 2rem 1.25rem;
+}

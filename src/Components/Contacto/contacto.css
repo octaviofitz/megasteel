@@ -1,0 +1,31 @@
+.contacto{
+    background-color: #1C404E;
+    padding: 2rem;
+}
+
+.contacto .titulo{
+    font-size: 5vh;
+    margin-bottom: 0.8rem;
+    color: #fff;
+}
+
+.contacto .texto{
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.contacto .box{
+    margin-left: -1.5vw;
+}
+
+.contacto .boton{
+    display: flex;
+    margin: 1.5rem auto;
+    background-color: antiquewhite;
+    color: #1C404E;
+    font-size: 1.05rem;
+}
+
+.containerIMG{
+    display: none;
+}

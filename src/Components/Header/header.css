@@ -1,0 +1,14 @@
+.header{
+    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url('../../IMG/Index/Banner.jpeg') center;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+}
+
+.header .titulo{
+    color: #fff;
+    text-align: center;
+    padding: 22vh 5vw 0;
+    color: #fff;
+    font-weight: 700;
+}
