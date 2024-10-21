@@ -1,8 +1,8 @@
-.css-95f9g5-MuiToolbar-root{
-    background-color: #fff!important;
-    color: aquamarine!important;
+.navBar .MuiToolbar-root {
+    background-color: #fff !important;
+    color: aquamarine !important;
 }
 
-.css-1accv8u-MuiButtonBase-root-MuiButton-root{
-    color: #1C404E!important;
+.menuDrawer .MuiButtonBase-root {
+    color: #1C404E !important;
 }
