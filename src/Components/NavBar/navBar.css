@@ -1,8 +1,32 @@
 .navBar .MuiToolbar-root {
-    background-color: #fff !important;
-    color: aquamarine !important;
+    background-color: #272626 !important;
+    color: #fff !important;
+    padding: 0.5rem 1rem;
 }
 
 .menuDrawer .MuiButtonBase-root {
-    color: #1C404E !important;
+    color: #7AD2C4 !important;
+}
+
+.MuiPaper-root{
+    background-color: #272626 !important;
+}
+
+.css-1edfpdg-MuiTypography-root{
+    color: #3F608F !important;
+    font-weight: 400 !important;
+    font-size: 1.5rem !important;
+}
+
+.css-20bmp1-MuiSvgIcon-root{
+    fill: #3F608F !important;
+    font-weight: 900;
+}
+
+.isologo{
+    height: 13vh !important;
+}
+
+.logo{
+    height: 9vh !important;
 }

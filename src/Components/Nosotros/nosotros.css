@@ -1,9 +1,10 @@
 .nosotros{
     padding: 2rem;
+    background-color: #3F608F;
 }
 
 .nosotros .titulo{
-    color: #fff;
+    color: #52FFB6;
     font-size: 5vh;
     margin-bottom: 0.8rem;
 }
@@ -14,5 +15,5 @@
 
 .nosotros .negrita{
     font-weight: 700;
-    color: antiquewhite;
+    color: #52FFB6;
 }

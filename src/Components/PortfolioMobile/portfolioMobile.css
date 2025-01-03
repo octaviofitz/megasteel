@@ -5,10 +5,20 @@
 
 .portfolioMobile .titulo{
     font-size: 5vh;
+    color: #3F608F;
     margin-bottom: 0.8rem;
     padding: 2rem 2rem 0rem;
 }
 
 .portfolioMobile .texto{
-    padding: 0 2rem 1.25rem;
+    padding: 0 2rem 2rem;
+}
+
+.portfolioMobile .image-gallery-slide .image-gallery-image{
+    width: 90vw;
+}
+
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg, .image-gallery-fullscreen-button{
+    height: 45px;
+    width: 60px;
 }

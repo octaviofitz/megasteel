@@ -1,9 +1,15 @@
 .footer{
-    border: 1px solid #1C404E;
+    border: 1px solid #3F608F;
+    color: #fff;
     margin: 1rem;
     margin-bottom: 0;
     border-radius: 10px;
     padding: 1rem 0.75rem;
     font-size: 0.9rem;
-    background-color: #fff;
+    font-weight: 700;
+    background-color: #3F608F;
+}
+
+.footer .links{
+    color: #fff;
 }

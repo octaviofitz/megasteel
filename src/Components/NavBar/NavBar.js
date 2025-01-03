@@ -15,6 +15,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
+import Isologo from '../../IMG/Index/Isologo.png';
+import Logo from '../../IMG/Index/Logo.png';
+
+
 import './navBar.css';
 
 const drawerWidth = 240;
@@ -30,8 +34,14 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+      {/* Logo en el menú móvil */}
       <Typography variant="h6" sx={{ my: 2 }}>
-        MEGASTEEL
+        <img
+          src={Isologo}
+          alt="MEGASTEEL Logo"
+          style={{ height: '40px', cursor: 'pointer' }}
+          className='isologo'
+        />
       </Typography>
       <Divider />
       <List>
@@ -53,13 +63,18 @@ function DrawerAppBar(props) {
       <CssBaseline />
       <AppBar component="nav" className="navBar">
         <Toolbar>
-          {/* Logo */}
+          {/* Logo en la barra de navegación */}
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' } }}
           >
-            MEGASTEEL
+            <img
+              src={Logo}
+              alt="MEGASTEEL Logo"
+              style={{ height: '40px', cursor: 'pointer' }}
+              className='logo'
+            />
           </Typography>
 
           {/* Botón de menú hamburguesa */}
@@ -98,7 +113,7 @@ function DrawerAppBar(props) {
             display: { xs: 'block', sm: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
-          className="menuDrawer" // Clase para el fondo del menú
+          className="menuDrawer"
         >
           {drawer}
         </Drawer>
