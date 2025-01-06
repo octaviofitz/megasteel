@@ -6,12 +6,15 @@
 .contacto .titulo{
     font-size: 5vh;
     margin-bottom: 0.8rem;
-    color: #52FFB6;
+    color: #fff;
+    font-family: 'GothamMedium';
+    text-transform: uppercase;
 }
 
 .contacto .texto{
     color: #fff;
     padding-bottom: 2rem;
+    font-family: 'GothamBook';
 }
 
 .contacto .box{
@@ -21,11 +24,15 @@
 .contacto .boton{
     display: flex;
     margin: 1.5rem auto;
-    background-color: #52FFB6;
-    color: #fff;
+    background-color: #fff;
+    color: #3F608F;
     font-size: 1.05rem;
 }
 
 .containerIMG{
     display: none;
+}
+
+.css-y4n9bg-MuiFormControl-root-MuiTextField-root{
+    border-radius: 8px !important;
 }

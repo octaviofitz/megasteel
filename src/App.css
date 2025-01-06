@@ -8,4 +8,24 @@
   font-family: "Lato", sans-serif;
 }
 
+@font-face {
+  font-family: 'BankGothicBold';
+  src: url('./Fonts/BankGothicBold/BankGothicBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('./Fonts/GothamMedium/GothamMedium.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('./Fonts/GothamBook/GothamBook.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

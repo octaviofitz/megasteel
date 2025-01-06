@@ -4,16 +4,19 @@
 }
 
 .nosotros .titulo{
-    color: #52FFB6;
+    color: #fff;
     font-size: 5vh;
     margin-bottom: 0.8rem;
+    font-family: 'GothamMedium';
+    text-transform: uppercase;
 }
 
 .nosotros .texto{
     color: #fff;
+    font-family: 'GothamBook';
 }
 
 .nosotros .negrita{
     font-weight: 700;
-    color: #52FFB6;
+    color: #fff;
 }

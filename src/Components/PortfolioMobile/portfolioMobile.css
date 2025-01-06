@@ -1,17 +1,22 @@
 .portfolioMobile{
     background-color: #fff;
     padding-bottom: 0rem;
+    padding: 2rem;
 }
 
 .portfolioMobile .titulo{
-    font-size: 5vh;
+    font-size: 4.8vh;
     color: #3F608F;
     margin-bottom: 0.8rem;
-    padding: 2rem 2rem 0rem;
+    padding: 2rem -2rem 2rem;
+    font-family: 'GothamMedium';
+    text-transform: uppercase;
 }
 
 .portfolioMobile .texto{
-    padding: 0 2rem 2rem;
+    padding: 0 -2rem 2rem;
+    margin-bottom: 2rem;
+    font-family: 'GothamBook';
 }
 
 .portfolioMobile .image-gallery-slide .image-gallery-image{
