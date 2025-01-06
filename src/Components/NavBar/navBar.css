@@ -1,6 +1,6 @@
 .navBar .MuiToolbar-root {
-    background-color: #272626 !important;
-    color: #272626 !important;
+    background-color: #7AD2C4 !important;
+    color: #7AD2C4 !important;
     padding: 0.5rem 1rem;
 }
 
@@ -16,9 +16,9 @@
     color: #fff !important;
     font-weight: 400 !important;
     font-size: 2rem !important;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    padding: 1rem;
+    text-decoration: underline !important;
+    text-underline-offset: 8px !important;
+    padding: 1rem !important;
 }
 
 .css-20bmp1-MuiSvgIcon-root{

@@ -1,13 +1,12 @@
 .footer{
     border: 1px solid #3F608F;
-    color: #fff;
     margin: 1rem;
     margin-bottom: 0;
     border-radius: 10px;
     padding: 1rem 0.75rem;
     font-size: 0.9rem;
-    font-weight: 400;
-    background-color: #3F608F;
+    font-weight: 700;
+    background-color: #7AD2C4;
     text-align: center;
     font-family: 'GothamBook';
 }
@@ -22,6 +21,6 @@
 
 .footer .links{
     margin: 1rem 0;
-    color: #fff;
     font-family: 'GothamBook';
+    color: #3F608F;
 }
