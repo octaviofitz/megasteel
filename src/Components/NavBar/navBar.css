@@ -1,7 +1,7 @@
 .navBar .MuiToolbar-root {
-    background-color: #7AD2C4 !important;
-    color: #7AD2C4 !important;
-    padding: 0.5rem 1rem;
+    background-color: #fff !important;
+    color: #fff !important;
+    padding: 0.15rem 1rem;
 }
 
 .menuDrawer .MuiButtonBase-root {
@@ -9,16 +9,20 @@
 }
 
 .MuiPaper-root{
-    background-color: #272626 !important;
+    background-color: #fff !important;
 }
 
 .css-1edfpdg-MuiTypography-root{
-    color: #fff !important;
+    color: #3F608F !important;
     font-weight: 400 !important;
     font-size: 2rem !important;
+    padding: 1rem !important;
     text-decoration: underline !important;
     text-underline-offset: 8px !important;
-    padding: 1rem !important;
+}
+
+.css-1edfpdg-MuiTypography-root:hover{
+    color: #52FFB6 !important;
 }
 
 .css-20bmp1-MuiSvgIcon-root{
@@ -31,5 +35,5 @@
 }
 
 .logo{
-    height: 9vh !important;
+    height: 7vh !important;
 }
