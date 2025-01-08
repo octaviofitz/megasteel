@@ -13,13 +13,11 @@
 
 .footer .logo{
     width: 15vw;
-    height: 100vh;
     display: flex;
     margin: auto;
-
 }
 
-.footer .links{
+.footer .containerTexto .texto{
     margin: 1rem 0;
     font-family: 'GothamBook';
     color: #3F608F;
@@ -28,4 +26,43 @@
 .footer .bold{
     color: #3F608F;
     font-weight: 900;
+    text-decoration: none;
+}
+
+.footer .bold:hover{
+    color: #52FFB6;
+}
+
+@media(min-width: 768px){
+    .footer .logo{
+        width: 10vw;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+    .footer .containerTexto .texto{
+        margin: 1.5rem;
+    }
+}
+
+@media (min-width:1024px){
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        margin: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer .logo{
+        width: 8vw;
+    }
+
+    .footer .containerTexto .texto{
+        padding: 0rem;
+        margin: 1.5rem;
+        font-size: 1rem;
+    }
+
 }

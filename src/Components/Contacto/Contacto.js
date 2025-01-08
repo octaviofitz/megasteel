@@ -65,16 +65,14 @@ function Contacto() {
 
     return (
         <section className='contacto' id='contacto'> 
-        <div className='container'>
-            <div className='containerIMG'>
-                <img src='' alt='Contacto MegaSteel' />
-            </div>
-        </div>
+        <div className='containerTexto'>
         <div>
             <h4 className='titulo'>Contacto</h4>
             <p className='texto'>En Megasteel, estamos aquí para ayudarte. Si tienes alguna consulta o necesitas más información sobre nuestros servicios, no dudes en completar el formulario. Nuestro equipo se pondrá en contacto contigo lo antes posible. ¡Estamos listos para trabajar juntos en tu próximo proyecto!</p>
             </div>
-
+        </div>
+        
+      <div className='containerBox'>
             <Box
       component="form"
       sx={{
@@ -201,6 +199,7 @@ function Contacto() {
       
       </div>   
     </Box>
+    </div>
 
         </section>
     );

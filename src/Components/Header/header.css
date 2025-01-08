@@ -13,3 +13,24 @@
     font-family: 'BankGothicBold';
     font-size: 45px;
 }
+
+@media(min-width: 768px) {
+    .header .titulo{
+        padding: 28vh 5vw 0;
+        font-size: 60px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .header .titulo{
+        padding: 27vh 5vw 0;
+        font-size: 70px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .header .titulo{
+        padding: 26vh 5vw 0;
+        font-size: 80px;
+    }
+}

@@ -7,10 +7,12 @@ import './footer.css';
 function Footer() {
     return (
         <footer className='footer'>
-            <div className='container'>
+            <div className='containerImg'>
                 <img src={logo} className='logo' alt='Logo Megasteel' />
-            <p className='links'>© 2025 Megasteel. Todos los derechos reservados</p>
-            <p className='links'>Desarrollado por <b className='bold'>Galidé</b></p>
+                     </div>
+                <div className='containerTexto'>
+            <p className='texto'>© 2025 Megasteel. Todos los derechos reservados</p>
+            <p className='texto'>Desarrollado por <a href='https://www.galide.com.ar' target='__blank' className='bold'>Galidé</a></p>
             </div>
         </footer>
     );

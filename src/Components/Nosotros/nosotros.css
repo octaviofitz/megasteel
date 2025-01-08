@@ -20,3 +20,24 @@
     font-weight: 700;
     color: #fff;
 }
+
+@media(min-width: 768px){
+    .nosotros{
+        padding: 8vh 10vw;
+    }
+}
+
+@media(min-width: 1024px){
+    .nosotros{
+        padding: 10vh 12vw;
+    }
+
+    .nosotros .titulo{
+        font-size: 6vh;
+
+    }
+
+    .nosotros .texto{
+        font-size: 1.25rem;
+    }
+}

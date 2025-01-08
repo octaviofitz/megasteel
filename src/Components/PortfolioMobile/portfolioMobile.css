@@ -28,3 +28,33 @@
     height: 45px;
     width: 60px;
 }
+
+.image-gallery-fullscreen-button .image-gallery-svg, .image-gallery-play-button .image-gallery-svg {
+        display: none;
+}
+
+@media(min-width: 768px){
+    .portfolioMobile{
+        padding: 8vh 10vw;
+    }
+}
+
+ @media(min-width: 1024px){
+    .portfolioMobile{
+        padding: 10vh 12vw;
+    }
+
+    .portfolioMobile .titulo{
+        font-size: 6vh;
+    }
+
+    .portfolioMobile .texto{
+        font-size: 1.25rem;
+    }
+
+    .portfolioMobile .image-gallery-slide .image-gallery-image{
+        width: 60vw;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+} 

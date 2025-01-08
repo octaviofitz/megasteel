@@ -29,10 +29,45 @@
     font-size: 1.05rem;
 }
 
+.contacto .boton:hover{
+    color: #52FFB6;
+}
+
 .containerIMG{
     display: none;
 }
 
 .css-y4n9bg-MuiFormControl-root-MuiTextField-root{
     border-radius: 8px !important;
+}
+
+@media(min-width: 768px){
+    .contacto{
+        padding: 8vh 10vw;
+    }
+}
+
+@media(min-width: 1024px){
+    .contacto{
+        display: flex;
+        justify-content: space-between;
+        padding: 8vh 10vw;
+        padding-bottom: 6vh;
+    }
+
+    .contacto .containerTexto{
+        width: 35vw;
+    }
+
+    .contacto .containerBox{
+        width: 35vw;
+    }
+
+    .contacto .titulo{
+        font-size: 6vh;
+    }
+
+    .contacto .texto{
+        font-size: 1.25rem;
+    }
 }

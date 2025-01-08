@@ -31,10 +31,10 @@
 }
 
 
-.isologo{
+.navBar .isologo{
     height: 13vh !important;
 }
 
-.logo{
+.navBar .logo{
     height: 7vh !important;
 }
