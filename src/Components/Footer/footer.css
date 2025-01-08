@@ -1,6 +1,6 @@
 .footer{
     border: 1px solid #3F608F;
-    margin: 1rem;
+    margin: 2rem 1rem;
     margin-bottom: 0;
     border-radius: 10px;
     padding: 1rem 0.75rem;
@@ -23,4 +23,9 @@
     margin: 1rem 0;
     font-family: 'GothamBook';
     color: #3F608F;
+}
+
+.footer .bold{
+    color: #3F608F;
+    font-weight: 900;
 }

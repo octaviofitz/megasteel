@@ -15,7 +15,7 @@
 .css-1edfpdg-MuiTypography-root{
     color: #3F608F !important;
     font-weight: 400 !important;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     padding: 1rem !important;
     text-decoration: underline !important;
     text-underline-offset: 8px !important;
@@ -29,6 +29,7 @@
     fill: #3F608F !important;
     font-weight: 900;
 }
+
 
 .isologo{
     height: 13vh !important;

@@ -9,8 +9,8 @@ function Footer() {
         <footer className='footer'>
             <div className='container'>
                 <img src={logo} className='logo' alt='Logo Megasteel' />
-            <p className='links'>© 2024 Megasteel. Todos los derechos reservados</p>
-            <p className='links'>Desarrollado por Galidé</p>
+            <p className='links'>© 2025 Megasteel. Todos los derechos reservados</p>
+            <p className='links'>Desarrollado por <b className='bold'>Galidé</b></p>
             </div>
         </footer>
     );
