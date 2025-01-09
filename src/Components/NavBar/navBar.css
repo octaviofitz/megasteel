@@ -9,17 +9,17 @@
     background-color: #fff !important;
 }
 
-.css-11rj8g3-MuiButtonBase-root-MuiListItemButton-root{
+/* .css-11rj8g3-MuiButtonBase-root-MuiListItemButton-root{
     font-size: 1.2rem !important;
     font-family: "GothamMedium" !important;
     color: #3F608F !important;
-}
+} */
 
 .css-1u169s7-MuiList-root{
     padding-top: 20px !important;
 }
 
-.css-1edfpdg-MuiTypography-root{
+/* .css-1edfpdg-MuiTypography-root{
     color: #3F608F !important;
     font-weight: 400 !important;
     font-size: 1.2rem !important;
@@ -27,7 +27,13 @@
     text-decoration: underline !important;
     text-underline-offset: 8px !important;
     font-family: 'GothamMedium' !important;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
+} */
+
+.MuiListItemText-root, 
+.css-1y2w5y4-MuiListItemText-root,
+.css-1edfpdg-MuiTypography-root{
+    font-size: 20rem !important;
 }
 
 .css-1edfpdg-MuiTypography-root:hover{
