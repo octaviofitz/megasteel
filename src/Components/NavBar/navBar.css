@@ -2,6 +2,7 @@
     background-color: #fff !important;
     color: #fff !important;
     padding: 0.15rem 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
 }
 
 .menuDrawer .MuiButtonBase-root {
@@ -31,10 +32,42 @@
 }
 
 
-.navBar .isologo{
-    height: 13vh !important;
-}
-
 .navBar .logo{
     height: 7vh !important;
+
+}
+
+.css-1accv8u-MuiButtonBase-root-MuiButton-root{
+    color: #3F608F !important;
+    font-family: 'GothamMedium' !important;
+    font-weight: 400 !important;
+    font-size: 0.75rem !important;
+    padding: 0 1rem !important;
+    margin-top: -1rem !important;
+}
+
+.css-1accv8u-MuiButtonBase-root-MuiButton-root:hover{
+    color: #52FFB6 !important;
+}
+
+@media (min-width: 768px){
+    .navBar {
+        padding: 0.15rem 1rem;
+    }
+
+    .navBar .logo{
+        height: 9vh !important;
+        padding-left: 2rem !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .css-1accv8u-MuiButtonBase-root-MuiButton-root{
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (min-width: 1024px){
+    .css-1accv8u-MuiButtonBase-root-MuiButton-root{
+        font-size: 1.1rem !important;
+    }
 }

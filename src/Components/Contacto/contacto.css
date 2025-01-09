@@ -26,7 +26,7 @@
     margin: 1.5rem auto;
     background-color: #fff;
     color: #3F608F;
-    font-size: 1.05rem;
+    font-size: 0.9rem;
 }
 
 .contacto .boton:hover{
@@ -38,8 +38,9 @@
 }
 
 .css-y4n9bg-MuiFormControl-root-MuiTextField-root{
-    border-radius: 8px !important;
+    border-radius: 8px !important ;
 }
+
 
 @media(min-width: 768px){
     .contacto{

@@ -22,7 +22,7 @@ import Logo from '../../IMG/Index/Logo.png';
 import './navBar.css';
 
 const drawerWidth = 240;
-const navItems = ['Nuestra empresa', 'Trabajos', 'Contacto'];
+const navItems = ['Nosotros', 'Trabajos', 'Contacto'];
 
 function DrawerAppBar(props) {
   const { window } = props;

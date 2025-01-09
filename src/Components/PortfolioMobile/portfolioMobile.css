@@ -33,6 +33,16 @@
         display: none;
 }
 
+.portfolioMobile .image-gallery-slide .image-gallery-image{
+    border-radius: 8px !important;
+}
+
+.image-gallery-svg:hover{
+    fill: #52FFB6 !important;
+    color: #52FFB6 !important;
+}
+  
+
 @media(min-width: 768px){
     .portfolioMobile{
         padding: 8vh 10vw;
