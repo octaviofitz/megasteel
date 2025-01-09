@@ -16,10 +16,11 @@
 .css-1edfpdg-MuiTypography-root{
     color: #3F608F !important;
     font-weight: 400 !important;
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
     padding: 1rem !important;
     text-decoration: underline !important;
     text-underline-offset: 8px !important;
+    font-family: 'GothamMedium' !important;
 }
 
 .css-1edfpdg-MuiTypography-root:hover{
@@ -34,7 +35,10 @@
 
 .navBar .logo{
     height: 7vh !important;
+}
 
+ .isologo{
+    height: 80px !important;
 }
 
 .navBar .css-1accv8u-MuiButtonBase-root-MuiButton-root{
@@ -68,6 +72,6 @@
 
 @media (min-width: 1024px){
     .css-1accv8u-MuiButtonBase-root-MuiButton-root{
-        font-size: 1.1rem !important;
+        font-size: 1.3rem !important;
     }
 }
