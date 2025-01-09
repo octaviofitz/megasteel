@@ -18,11 +18,14 @@ import Button from '@mui/material/Button';
 import Isologo from '../../IMG/Index/Isologo.png';
 import Logo from '../../IMG/Index/Logo.png';
 
-
 import './navBar.css';
 
 const drawerWidth = 240;
-const navItems = ['Nosotros', 'Trabajos', 'Contacto'];
+const navItems = [
+  { label: 'Nosotros', href: '#nosotros' },
+  { label: 'Trabajos', href: '#trabajos' },
+  { label: 'Contacto', href: '#contacto' },
+];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -40,15 +43,19 @@ function DrawerAppBar(props) {
           src={Isologo}
           alt="MEGASTEEL Logo"
           style={{ height: '40px', cursor: 'pointer' }}
-          className='isologo'
+          className="isologo"
         />
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.label} disablePadding>
+            <ListItemButton
+              sx={{ textAlign: 'center' }}
+              component="a"
+              href={item.href} // Navega a la sección correspondiente
+            >
+              <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -73,7 +80,7 @@ function DrawerAppBar(props) {
               src={Logo}
               alt="MEGASTEEL Logo"
               style={{ height: '40px', cursor: 'pointer' }}
-              className='logo'
+              className="logo"
             />
           </Typography>
 
@@ -91,8 +98,12 @@ function DrawerAppBar(props) {
           {/* Botones de navegación en desktop */}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+              <Button
+                key={item.label}
+                sx={{ color: '#fff' }}
+                href={item.href} // Navega a la sección correspondiente
+              >
+                {item.label}
               </Button>
             ))}
           </Box>

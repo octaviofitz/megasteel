@@ -75,7 +75,7 @@ function PorfolioMobile() {
   ];
 
   return (
-    <section className='portfolioMobile'>
+    <section className='portfolioMobile' id='portfolio'>
         <h3 className='titulo'>Nuestros trabajos</h3>
         <p className='texto'>A lo largo de los años, en Megasteel nos hemos especializado en proyectos de arquitectura industrial, brindando soluciones robustas y eficientes para todo tipo de estructuras. Cada uno de nuestros trabajos refleja nuestro compromiso con la calidad, la precisión y el diseño innovador, adaptado a las necesidades específicas de cada cliente. A continuación, te invitamos a descubrir algunos de nuestros proyectos más recientes, donde la experiencia y la dedicación se transforman en resultados concretos.</p>
       <ImageGallery items={images} />

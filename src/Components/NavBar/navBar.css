@@ -52,7 +52,7 @@
 
 @media (min-width: 768px){
     .navBar {
-        padding: 0.15rem 1rem;
+        padding: 0.15rem 1rem !important;
     }
 
     .navBar .logo{
