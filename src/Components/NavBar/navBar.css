@@ -1,90 +1,56 @@
-.navBar .MuiToolbar-root {
-    background-color: #fff !important;
-    color: #fff !important;
-    padding: 0.15rem 1rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
-}
-
-.MuiPaper-root{
-    background-color: #fff !important;
-}
-
-/* .css-11rj8g3-MuiButtonBase-root-MuiListItemButton-root{
-    font-size: 1.2rem !important;
-    font-family: "GothamMedium" !important;
-    color: #3F608F !important;
-} */
-
-.css-1u169s7-MuiList-root{
-    padding-top: 20px !important;
-}
-
-/* .css-1edfpdg-MuiTypography-root{
-    color: #3F608F !important;
-    font-weight: 400 !important;
-    font-size: 1.2rem !important;
-    padding: 1rem !important;
-    text-decoration: underline !important;
-    text-underline-offset: 8px !important;
-    font-family: 'GothamMedium' !important;
-    text-transform: uppercase !important;
-} */
-
-.MuiListItemText-root, 
-.css-1y2w5y4-MuiListItemText-root,
-.css-1edfpdg-MuiTypography-root{
-    font-size: 20rem !important;
-}
-
-.css-1edfpdg-MuiTypography-root:hover{
-    color: #52FFB6 !important;
-}
-
-.css-20bmp1-MuiSvgIcon-root{
-    fill: #3F608F !important;
-    font-weight: 900;
-}
-
-
-.navBar .logo{
+.navBar {
+    padding: 3px;
+  }
+  
+  .navBar .logo {
     height: 7vh !important;
-}
-
- .isologo{
-    height: 80px !important;
-}
-
-.navBar .css-1accv8u-MuiButtonBase-root-MuiButton-root{
-    color: #3F608F !important;
-    font-family: 'GothamMedium' !important;
-    font-weight: 400 !important;
-    font-size: 0.75rem !important;
-    padding: 0 1rem !important;
-    margin-top: -1rem !important;
-}
-
-.navBar .css-1accv8u-MuiButtonBase-root-MuiButton-root:hover{
+  }
+  
+  .navBar .link {
+    color: #3F608F;
+    text-align: center;
+    padding: 10px;
+    font-family: 'GothamMedium';
+    text-transform: uppercase;
+  }
+  
+  .navBar .link:hover {
     color: #52FFB6 !important;
-}
-
-@media (min-width: 768px){
+    text-decoration: underline;
+  }
+  
+  .navbar-toggler {
+    font-size: 0.9rem;
+    color: #3F608F;
+    border: transparent;
+  }
+  
+  @media (min-width: 768px) {
     .navBar {
-        padding: 0.15rem 1rem !important;
+      padding: 0.15rem 1rem !important;
     }
-
-    .navBar .logo{
-        height: 9vh !important;
-        padding-left: 2rem !important;
-        margin-top: 0.5rem !important;
+  
+    .navBar .logo {
+      height: 9vh !important;
+      padding-left: 2rem !important;
+      margin-top: 0.5rem !important;
     }
-
-    .css-1accv8u-MuiButtonBase-root-MuiButton-root{
-        font-size: 0.9rem !important;
+  }
+  
+  @media (min-width: 1024px) {
+    .navBar {
+      padding: 0px !important;
+      display: flex;
+      justify-content: space-around;
     }
-}
-
-@media (min-width: 1024px){
-    .css-1accv8u-MuiButtonBase-root-MuiButton-root{
-        font-size: 1.3rem !important;
+  
+    .navBar .link {
+      padding: 3px;
     }
-}
+  
+    /* Añadimos esta regla para alinear los enlaces a la derecha */
+    .navBar .navbar-collapse {
+      justify-content: flex-end;
+    }
+  }
+  
