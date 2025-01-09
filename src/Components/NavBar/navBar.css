@@ -5,12 +5,18 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
 }
 
-.menuDrawer .MuiButtonBase-root {
-    color: #7AD2C4 !important;
-}
-
 .MuiPaper-root{
     background-color: #fff !important;
+}
+
+.css-11rj8g3-MuiButtonBase-root-MuiListItemButton-root{
+    font-size: 1.2rem !important;
+    font-family: "GothamMedium" !important;
+    color: #3F608F !important;
+}
+
+.css-1u169s7-MuiList-root{
+    padding-top: 20px !important;
 }
 
 .css-1edfpdg-MuiTypography-root{
@@ -21,6 +27,7 @@
     text-decoration: underline !important;
     text-underline-offset: 8px !important;
     font-family: 'GothamMedium' !important;
+    text-transform: uppercase;
 }
 
 .css-1edfpdg-MuiTypography-root:hover{
