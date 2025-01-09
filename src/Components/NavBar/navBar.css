@@ -37,7 +37,7 @@
 
 }
 
-.css-1accv8u-MuiButtonBase-root-MuiButton-root{
+.navBar .css-1accv8u-MuiButtonBase-root-MuiButton-root{
     color: #3F608F !important;
     font-family: 'GothamMedium' !important;
     font-weight: 400 !important;
@@ -46,7 +46,7 @@
     margin-top: -1rem !important;
 }
 
-.css-1accv8u-MuiButtonBase-root-MuiButton-root:hover{
+.navBar .css-1accv8u-MuiButtonBase-root-MuiButton-root:hover{
     color: #52FFB6 !important;
 }
 
