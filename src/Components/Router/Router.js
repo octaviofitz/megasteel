@@ -7,6 +7,7 @@ import Home from '../../Components/Home/Home';
 import Industrial from '../../Components/Industrial/Industrial';
 import Civil from '../../Components/Civil/Civil';
 import Contacto from '../../Components/Contacto/Contacto';
+import WhatsappBoton from '../../Components/Utilidades/WhatsappBoton/WhatsappBoton';
 
 import './router.css';
 
@@ -19,7 +20,7 @@ function Router() {
             <Routes>
             <Route path='/' element={<Home />} />
             </Routes>
-
+            <WhatsappBoton phoneNumber='1159300042' />
             <Footer />
             </div>
             </BrowserRouter>
