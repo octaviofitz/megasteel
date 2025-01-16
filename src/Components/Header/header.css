@@ -7,30 +7,24 @@
 
 .header .titulo{
     text-align: center;
-    padding: 30vh 5vw 0;
+    padding: 25vh 3vw 0;
     color: #fff;
     font-weight: 600;
     font-family: 'BankGothicBold';
-    font-size: 45px;
+    font-size: 40px;
 }
 
 @media(min-width: 768px) {
     .header .titulo{
-        padding: 28vh 5vw 0;
-        font-size: 60px;
+        padding: 22vh 5vw 0;
+        font-size: 50px;
     }
 }
 
+
 @media(min-width: 1024px) {
     .header .titulo{
-        padding: 27vh 5vw 0;
+        padding: 21vh 5vw 0;
         font-size: 70px;
-    }
-}
-
-@media(min-width: 1024px) {
-    .header .titulo{
-        padding: 26vh 5vw 0;
-        font-size: 80px;
     }
 }

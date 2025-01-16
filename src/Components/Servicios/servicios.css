@@ -1,0 +1,104 @@
+.servicios{
+    background-color: #3F608F;
+    color: #fff;
+    padding: 2rem;
+}
+
+.servicios .titulo{
+    color: #FFF;
+    font-size: 5vh;
+    margin-bottom: 0.8rem;
+    font-family: 'GothamMedium';
+    text-transform: uppercase;
+}
+
+.servicios .texto{
+        color: #fff;
+        font-family: 'GothamBook';
+}
+
+.servicios .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.75rem;
+}
+
+.servicios .container .card{
+    border-bottom: 4px solid #52FFB6;
+    border-right: 4px solid #52FFB6;
+    margin: 1rem;
+    padding: 0.65rem;
+}
+
+.servicios .container .card .titulo{
+    color: #3F608F;
+    text-align: center;
+    font-family: 'GothamMedium';
+}
+
+.servicios .container .card .texto{
+    margin-top: -0.5rem;
+    color: #3F608F;
+    text-align: center;
+    font-family: 'GothamBook';
+}
+
+@media (min-width: 768px){
+    .servicios{
+        padding: 8vh 10vw;
+    }
+
+    .servicios .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .servicios .container .card{
+        width: 33vw;
+    }
+
+    .servicios .container .card .img{
+        width: 30vw;
+        display: flex;
+        justify-items: center;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px){
+    .servicios{
+        padding: 10vh 0vw;
+    }
+
+    .servicios .titulo{
+        font-size: 6vh;
+        padding: 0 12vw;
+
+    }
+
+    .servicios .texto{
+        font-size: 1.25rem;
+        padding: 0 12vw;
+    }
+
+    .servicios .container .card{
+        width: 22vw;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .servicios .container .card .img{
+        width: 10vw;
+    }
+
+    .servicios .container .card .titulo{
+        padding: 0;
+    }
+
+    .servicios .container .card .texto{
+        padding: 0;
+    }
+}

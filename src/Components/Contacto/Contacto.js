@@ -14,7 +14,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           '& .MuiInputLabel-root.Mui-focused': {
-            color: '#52FFB6', // Color when focused
+            color: 'green', // Color when focused
           },
         },
       },
@@ -106,7 +106,7 @@ function Contacto() {
                 variant="outlined"
                 sx={{
                   backgroundColor: '#fff',
-                  borderRadius: '8px', // Border radius added here
+                  borderRadius: '4px', // Border radius added here
                 }}
                 onChange={(e) => {
                   setName(e.target.value);

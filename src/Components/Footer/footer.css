@@ -1,6 +1,6 @@
 .footer{
     border: 1px solid #3F608F;
-    margin: 2rem 1rem;
+    margin: 1rem 1rem;
     margin-bottom: 0;
     border-radius: 10px;
     padding: 1rem 0.75rem;
@@ -50,8 +50,8 @@
 @media (min-width:1024px){
     .footer{
         display: flex;
-        justify-content: space-around;
-        margin: 1.5rem;
+        justify-content: center;
+        margin: 1rem;
         margin-bottom: 0.5rem;
     }
 

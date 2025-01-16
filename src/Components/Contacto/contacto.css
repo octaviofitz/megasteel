@@ -37,8 +37,10 @@
     display: none;
 }
 
-.css-y4n9bg-MuiFormControl-root-MuiTextField-root{
-    border-radius: 8px !important ;
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+    border-bottom: 4px solid #52FFB6 !important;
+    border-right: 4px solid #52FFB6 !important;
 }
 
 

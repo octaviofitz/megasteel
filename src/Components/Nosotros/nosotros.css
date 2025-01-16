@@ -1,10 +1,12 @@
 .nosotros{
     padding: 2rem;
-    background-color: #3F608F;
+    background-color: #fff;
+    border-bottom: 4px solid #52FFB6;
+    border-top: 4px solid #52FFB6;
 }
 
 .nosotros .titulo{
-    color: #fff;
+    color: #3F608F;
     font-size: 5vh;
     margin-bottom: 0.8rem;
     font-family: 'GothamMedium';
@@ -12,13 +14,13 @@
 }
 
 .nosotros .texto{
-    color: #fff;
+    color: #3F608F;
     font-family: 'GothamBook';
 }
 
 .nosotros .negrita{
     font-weight: 700;
-    color: #fff;
+    color: #3F608F;
 }
 
 @media(min-width: 768px){
