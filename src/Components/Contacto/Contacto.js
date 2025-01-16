@@ -13,8 +13,11 @@ const theme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          '& .MuiInputLabel-root.Mui-focused': {
-            color: 'green', // Color when focused
+          '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+              borderBottom: '4px solid #52FFB6', // Border bottom color
+              borderRight: '4px solid #52FFB6', // Border right color
+            },
           },
         },
       },
@@ -106,7 +109,7 @@ function Contacto() {
                 variant="outlined"
                 sx={{
                   backgroundColor: '#fff',
-                  borderRadius: '4px', // Border radius added here
+                  borderRadius: '4px',
                 }}
                 onChange={(e) => {
                   setName(e.target.value);
@@ -132,7 +135,7 @@ function Contacto() {
                 type="email"
                 sx={{
                   backgroundColor: '#fff',
-                  borderRadius: '8px', // Border radius added here
+                  borderRadius: '8px',
                 }}
                 onChange={(e) => {
                   setMail(e.target.value);
@@ -157,7 +160,7 @@ function Contacto() {
                 variant="outlined"
                 sx={{
                   backgroundColor: '#fff',
-                  borderRadius: '8px', // Border radius added here
+                  borderRadius: '8px',
                 }}
                 onChange={(e) => {
                   setTelefono(e.target.value);
@@ -185,7 +188,7 @@ function Contacto() {
                 rows={4}
                 sx={{
                   backgroundColor: '#fff',
-                  borderRadius: '8px', // Border radius added here
+                  borderRadius: '8px',
                 }}
                 onChange={(e) => {
                   setMensaje(e.target.value);
@@ -203,10 +206,10 @@ function Contacto() {
                 error={errorMensaje}
                 helperText={leyendaMensaje}
               />
-              {botonName === true &&
-              botonTelefono === true &&
-              botonMail === true &&
-              botonMensaje === true ? (
+              {botonName &&
+              botonTelefono &&
+              botonMail &&
+              botonMensaje ? (
                 <Button
                   variant="contained"
                   size="lg"

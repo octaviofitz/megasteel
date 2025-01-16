@@ -6,7 +6,7 @@
 
 .servicios .titulo{
     color: #FFF;
-    font-size: 5vh;
+    font-size: 3.5vh;
     margin-bottom: 0.8rem;
     font-family: 'GothamMedium';
     text-transform: uppercase;
@@ -15,6 +15,7 @@
 .servicios .texto{
         color: #fff;
         font-family: 'GothamBook';
+        font-size: 2vh;
 }
 
 .servicios .container{
@@ -28,6 +29,13 @@
     border-right: 4px solid #52FFB6;
     margin: 1rem;
     padding: 0.65rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.servicios .container .card .img{
+    width: 45vw;
+    display: flex;
+    margin: auto;
 }
 
 .servicios .container .card .titulo{
