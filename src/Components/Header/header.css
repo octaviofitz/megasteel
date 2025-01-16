@@ -24,7 +24,15 @@
 
 @media(min-width: 1024px) {
     .header .titulo{
+        padding: 15vh 5vw 0;
+        font-size: 70px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .header .titulo{
         padding: 21vh 5vw 0;
         font-size: 70px;
     }
+
 }
