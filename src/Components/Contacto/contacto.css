@@ -17,6 +17,11 @@
     font-family: 'GothamBook';
 }
 
+.contacto .texto:last-child{
+    margin-top: -2.5rem;
+    padding-bottom: 1rem;
+}
+
 .contacto .box{
     margin-left: -1.5vw;
 }

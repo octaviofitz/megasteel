@@ -20,8 +20,8 @@ function Router() {
             <Routes>
             <Route path='/' element={<Home />} />
             </Routes>
-            <WhatsappBoton phoneNumber='1159300042' />
             <Footer />
+            <WhatsappBoton phoneNumber='1159300042' />
             </div>
             </BrowserRouter>
         </>

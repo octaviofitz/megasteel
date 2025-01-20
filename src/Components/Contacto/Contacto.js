@@ -19,6 +19,12 @@ const theme = createTheme({
               borderRight: '4px solid #52FFB6', // Border right color
             },
           },
+          '& .MuiInputLabel-root.Mui-focused': {
+            color: '#52FFB6', // Color when focused
+            padding: '1px',
+            backgroundColor: '#3F608F',
+
+          },
         },
       },
     },
@@ -82,9 +88,9 @@ function Contacto() {
               En Megasteel, estamos aquí para ayudarte. Si tienes alguna
               consulta o necesitas más información sobre nuestros servicios, no
               dudes en completar el formulario. Nuestro equipo se pondrá en
-              contacto contigo lo antes posible. ¡Estamos listos para trabajar
-              juntos en tu próximo proyecto!
+              contacto contigo lo antes posible.
             </p>
+            <p className='texto'>También podés contactarnos directamente a nuestro correo: info@megasteel.com</p>
           </div>
         </div>
 
