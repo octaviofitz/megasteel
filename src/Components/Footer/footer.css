@@ -57,7 +57,8 @@
     }
 
     .footer .logo{
-        width: 9vw;
+        width: 6vw;
+        margin-top: 1rem;
     }
 
     .footer .containerTexto .texto{

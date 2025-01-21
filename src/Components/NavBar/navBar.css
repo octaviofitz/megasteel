@@ -41,7 +41,7 @@
     .navBar {
       padding: 10px 0 12px !important;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     .navBar .logo{
