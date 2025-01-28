@@ -15,26 +15,26 @@ function Servicios() {
                 
                 <div className='card'> 
                     <img src={Img1} alt='' className='img' />
-                    <p className='titulo'>Titulo</p>
-                    <p className='texto'>Texto del servicio prestado. Texto del servicio prestado. Texto del servicio prestado. Texto del servicio prestado. </p>
+                    <p className='titulo'>Naves industriales</p>
+                    <p className='texto'>Construimos naves industriales funcionales y modernas, diseñadas para optimizar tu producción y almacenamiento.</p>
                 </div>
 
                 <div className='card'> 
                     <img src={Img2} alt='' className='img' />
-                    <p className='titulo'>Titulo</p>
-                    <p className='texto'>Texto del servicio prestado. Texto del servicio prestado. Texto del servicio prestado. Texto del servicio prestado. </p>
+                    <p className='titulo'>Soluciones Agroindustriales</p>
+                    <p className='texto'>Soluciones arquitectónicas para la agroindustria, combinando eficiencia, durabilidad y adaptabilidad en cada proyecto.</p>
                 </div>
 
                 <div className='card'> 
                     <img src={Img1} alt='' className='img' />
-                    <p className='titulo'>Titulo</p>
-                    <p className='texto'>Texto del servicio prestado. Texto del servicio prestado. Texto del servicio prestado. Texto del servicio prestado. </p>
+                    <p className='titulo'>Arquitectura deportiva</p>
+                    <p className='texto'>Desarrollamos proyectos de arquitectura industrial innovadores, priorizando funcionalidad y máxima eficiencia.</p>
                 </div>
 
                 <div className='card'> 
                     <img src={Img2} alt='' className='img' />
-                    <p className='titulo'>Titulo</p>
-                    <p className='texto'>Texto del servicio prestado. Texto del servicio prestado. Texto del servicio prestado. Texto del servicio prestado. </p>
+                    <p className='titulo'>Centro de distribución</p>
+                    <p className='texto'>Diseñamos centros de distribución eficientes y modernos, optimizados para logística y almacenamiento integral.</p>
                 </div>
             </div>
         </section>

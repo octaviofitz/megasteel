@@ -19,10 +19,10 @@ function PorfolioMobile() {
         original: require('../../IMG/Trabajos/Trabajo3.webp'),
         thumbnail: require('../../IMG/Trabajos/Trabajo3.webp'),
       },
-      {
+      /* {
         original: require('../../IMG/Trabajos/Trabajo4.webp'),
         thumbnail: require('../../IMG/Trabajos/Trabajo4.webp'),
-      },
+      }, */
       {
         original: require('../../IMG/Trabajos/Trabajo5.webp'),
         thumbnail: require('../../IMG/Trabajos/Trabajo5.webp'),
@@ -63,15 +63,11 @@ function PorfolioMobile() {
         original: require('../../IMG/Trabajos/Trabajo14.webp'),
         thumbnail: require('../../IMG/Trabajos/Trabajo14.webp'),
       },
-    /*   {
-        original: require('../../IMG/Trabajos/Video1.mp4'),
-        thumbnail: require('../../IMG/Trabajos/Video1.mp4'),
-      },
       {
-        original: require('../../IMG/Trabajos/Video2.mp4'),
-        thumbnail: require('../../IMG/Trabajos/Video2.mp4'),
-      },
- */
+        original: require('../../IMG/Trabajos/Trabajo15.webp'),
+        thumbnail: require('../../IMG/Trabajos/Trabajo15.webp'),
+      }
+ 
   ];
 
   return (
