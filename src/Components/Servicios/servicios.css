@@ -42,13 +42,14 @@
     width: 45vw;
     display: flex;
     margin: auto;
+    padding-bottom: 1rem;
 }
 
 .servicios .container .card .titulo{
     color: #3F608F;
     text-align: center;
     font-family: 'GothamMedium';
-    font-size: 3.5vh;
+    font-size: 3vh;
 }
 
 .servicios .container .card .texto{
@@ -82,46 +83,34 @@
     }
 }
 
-@media (min-width: 1024px){
-    .servicios{
-        padding: 10vh 0vw;
-    }
-
-    .servicios .titulo{
-        font-size: 6vh;
-        padding: 0 12vw;
-
-    }
-
-    .servicios .texto{
-        font-size: 1.25rem;
-        padding: 0 12vw;
-    }
-
-    .servicios .container{
+@media (min-width: 1024px) {
+    .servicios .container .card {
+        width: calc(26% - 2rem);
+        margin: 0;
+        align-items: center;
         display: flex;
-        flex-wrap: wrap;
-        gap: 2rem; /* Añade margen entre las tarjetas */
-        justify-content: center; /* Centra las tarjetas en el contenedor */
-        margin-top: 6vh;
+        flex-direction: column;
+        justify-content: center;
     }
-
-    .servicios .container .card{
-        width: calc(25% - 2rem); /* Ajusta el ancho de las tarjetas para que ocupen un 25% con espacio */
-        margin: 0; /* Elimina márgenes extra que puedan interferir */
-    }
-
-    .servicios .container .card .img{
+    
+    .servicios .container .card .img {
         width: 10vw;
+        padding-bottom: 2rem;
     }
 
-    .servicios .container .card .titulo{
+    .servicios .container .card .img:first-child{
+        padding-bottom: 1rem;
+    }
+    
+    .servicios .container .card .titulo {
         padding: 0;
         font-size: 2.5vh;
+        margin-bottom: 0.5rem;
     }
-
-    .servicios .container .card .texto{
+    
+    .servicios .container .card .texto {
         padding: 0;
         font-size: 2.25vh;
+        margin-top: 0;
     }
 }
