@@ -18,12 +18,18 @@
 }
 
 .footer .containerTexto .texto{
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     font-family: 'GothamBook';
     color: #fff;
 }
 
-.footer .bold{
+.footer .galide .texto{
+    margin-top: 1.25rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer .galide .bold{
     color: #3F608F;
     font-weight: 900;
     text-decoration: none;
@@ -43,32 +49,60 @@
     }
 
     .footer .containerTexto .texto{
-        margin: 1.5rem;
+        margin: 0.7rem;
+    }
+
+    .footer .galide{
+        margin-top: 1.55rem;
     }
 }
 
 @media (min-width:1024px){
     .footer{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         border: none;
-        padding: 0;
         align-items: center;
+        padding: 1rem 0;
+        margin: 0;
+    }
+
+
+    .footer .containerImg{
+        order: 1;
+    }
+
+    .footer .galide{
+        order: 2;
     }
 
     .footer .logo{
-        width: 6vw;
-        margin-top: 1rem;
+        width: 9vw;
+        margin-left: -5vw;
+
+    }
+
+    .footer .containerTexto{
+        padding: 0;
+        margin: 0;
     }
 
     .footer .containerTexto .texto{
         padding: 0rem;
-        margin-top: 2rem;
         font-size: 1rem;
+        margin: 0;
     }
 
-    .footer .containerTexto .texto:last-child{
-        margin-top: -0.8rem;
+    .footer .galide{
+        margin: 0;
+        padding: 0;
     }
 
+}
+
+@media (min-width: 1440px){
+    .footer{
+        padding: 0;
+    
+    }
 }

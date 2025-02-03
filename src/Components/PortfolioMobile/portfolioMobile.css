@@ -1,7 +1,7 @@
 .portfolioMobile{
     background-color: #fff;
     padding: 2rem;
-    padding-bottom: 0rem;
+    padding-bottom: 2rem;
     border-top: 4px solid #52FFB6;
     border-bottom: 4px solid #52FFB6;
 }
@@ -19,6 +19,7 @@
     padding: 0 -2rem 2rem;
     margin-bottom: 2rem;
     font-family: 'GothamBook';
+    color: #3F608F;
 }
 
 .portfolioMobile .image-gallery-slide .image-gallery-image{

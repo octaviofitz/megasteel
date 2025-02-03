@@ -49,7 +49,7 @@
     color: #3F608F;
     text-align: center;
     font-family: 'GothamMedium';
-    font-size: 3vh;
+    font-size: 2.75vh;
 }
 
 .servicios .container .card .texto{
@@ -84,9 +84,19 @@
 }
 
 @media (min-width: 1024px) {
+    
+    .servicios{
+        padding: 10vh 12vw;
+    }
+
+    .servicios .texto{
+        font-size: 1.25rem;
+    }
+    
     .servicios .container .card {
         width: calc(26% - 2rem);
         margin: 0;
+        margin-top: 1.5rem;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -105,7 +115,7 @@
     .servicios .container .card .titulo {
         padding: 0;
         font-size: 2.5vh;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.75rem;
     }
     
     .servicios .container .card .texto {
