@@ -21,7 +21,7 @@ function Router() {
             <Route path='/' element={<Home />} />
             </Routes>
             <Footer />
-            <WhatsappBoton phoneNumber='1130640303' />
+            <WhatsappBoton phoneNumber='+541130640303' />
             </div>
             </BrowserRouter>
         </>
