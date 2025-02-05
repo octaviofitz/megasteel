@@ -90,7 +90,7 @@ function Contacto() {
               dudes en completar el formulario. Nuestro equipo se pondrá en
               contacto contigo lo antes posible.
             </p>
-            <p className='texto'>También podés contactarnos directamente a nuestro correo: info@megasteel.com</p>
+            <p className='texto'>También podés contactarnos directamente a nuestro correo: info@megasteel.com.ar</p>
           </div>
         </div>
 
