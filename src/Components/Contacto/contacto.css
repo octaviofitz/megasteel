@@ -60,6 +60,10 @@
     border-color: #3F608F !important;
 } */
 
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm){
+    background-color: #3F608F;
+}
 @media(min-width: 768px){
     .contacto{
         padding: 8vh 10vw;

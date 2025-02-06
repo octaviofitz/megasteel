@@ -5,6 +5,7 @@ import { Button } from '@mui/material';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 import './contacto.css';
 
 const theme = createTheme({
@@ -14,21 +15,30 @@ const theme = createTheme({
         root: {
           '& .MuiOutlinedInput-root': {
             '& fieldset': {
+              borderBottom: '2px solid #000',
+              borderRight: '2px solid transparent',
+            },
+            '&:hover fieldset': {
+              borderBottom: '2px solid #52FFB6',
+              borderRight: '2px solid #52FFB6',
+            },
+            '&.Mui-focused fieldset': {
               borderBottom: '4px solid #52FFB6',
               borderRight: '4px solid #52FFB6',
             },
           },
           '& .MuiInputLabel-root': {
-            color: '#000', // Color inicial negro
+            color: '#000',
           },
           '& .MuiInputLabel-root.Mui-focused': {
-            color: '#52FFB6', // Color verde al hacer foco
+            color: '#52FFB6',
+            backgroundColor: '#3F608F'
           },
           '& .MuiInputLabel-root.Mui-shrink': {
-            color: '#52FFB6', // Color verde cuando hay texto
+            color: '#52FFB6',
           },
           '& .MuiOutlinedInput-input': {
-            color: '#000', // Color negro del texto ingresado
+            color: '#000',
           },
         },
       },
@@ -37,47 +47,50 @@ const theme = createTheme({
 });
 
 function Contacto() {
-  function sendEmail(e) {
+  const sendEmail = (e) => {
     e.preventDefault();
+    // Agregar validación de campos antes de enviar
+    if (!mail || !name || !mensaje) {
+      Swal.fire({
+        title: 'Error',
+        text: 'Por favor complete todos los campos requeridos',
+        icon: 'error'
+      });
+      return;
+    }
     Swal.fire({
       title: 'Enviando mensaje...',
       text: 'Por favor espere',
       didOpen: () => {
         Swal.showLoading()
       }
-    })
-
-    emailjs
-      .sendForm(
-        'service_6161vku',
-        'template_2ak4tyn', 
-        e.target,
-         'FU6mKZSQJKDSxtPKL' 
-      )
-      .then((res) => {
-        console.log(res);
-        Swal.fire({
-          title: '¡Mensaje enviado!',
-          text: 'Gracias por contactarnos. En breve nos pondremos en contacto.',
-          icon: 'success',
-          confirmButtonText: 'Cerrar',
-          timer: 5000
-        }).then((result) => {
-          if (result.isConfirmed) {
-            e.target.reset();
-          }
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-        Swal.fire({
-          title: 'Error al enviar el mensaje',
-          text: 'Por favor intente nuevamente más tarde.',
-          icon: 'error',
-          confirmButtonText: 'Cerrar'
-        });
+    });
+    emailjs.sendForm(
+      'service_avyk5ff',
+      'template_ayu86b6',
+      e.target,
+      'kGJMjsQGEXz5lmSJ2'
+    )
+    .then((response) => {
+      console.log('Estado:', response.status);
+      console.log('Mensaje:', response.text);
+      Swal.fire({
+        title: '¡Mensaje enviado!',
+        text: 'Gracias por contactarnos.',
+        icon: 'success'
+      }).then(() => {
+        e.target.reset();
       });
-  }
+    })
+    .catch((err) => {
+      console.error('Error completo:', err);
+      Swal.fire({
+        title: 'Error al enviar',
+        text: 'Por favor intente nuevamente más tarde.',
+        icon: 'error'
+      });
+    });
+  };
 
   const [name, setName] = useState('');
   const [leyendaName, setLeyendaName] = useState('');
@@ -85,7 +98,7 @@ function Contacto() {
   const [mail, setMail] = useState('');
   const [leyendaMail, setLeyendaMail] = useState('');
   const [errorMail, setErrorMail] = useState(false);
-  const re = /\S+@\S+\.\S+/;
+  const re = /\S+@\S+\.+\S+/;
   const [telefono, setTelefono] = useState('');
   const [mensaje, setMensaje] = useState('');
 
@@ -117,9 +130,9 @@ function Contacto() {
             <h4 className="titulo">Contacto</h4>
             <p className="texto">
               En Megasteel, estamos aquí para ayudarte. Si tienes alguna
-              consulta o necesitas más información sobre nuestros servicios, no
-              dudes en completar el formulario. Nuestro equipo se pondrá en
-              contacto contigo lo antes posible.
+              consulta o necesitas más información sobre nuestros servicios,
+              no dudes en completar el formulario. Nuestro equipo se pondrá
+              en contacto contigo lo antes posible.
             </p>
             <p className='texto'>También podés contactarnos directamente a nuestro correo: info@megasteel.com.ar</p>
           </div>
