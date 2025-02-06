@@ -5,7 +5,6 @@ import { Button } from '@mui/material';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
 import './contacto.css';
 
 const theme = createTheme({
@@ -15,15 +14,21 @@ const theme = createTheme({
         root: {
           '& .MuiOutlinedInput-root': {
             '& fieldset': {
-              borderBottom: '4px solid #52FFB6', // Border bottom color
-              borderRight: '4px solid #52FFB6', // Border right color
+              borderBottom: '4px solid #52FFB6',
+              borderRight: '4px solid #52FFB6',
             },
           },
+          '& .MuiInputLabel-root': {
+            color: '#000', // Color inicial negro
+          },
           '& .MuiInputLabel-root.Mui-focused': {
-            color: '#52FFB6', // Color when focused
-            padding: '1px',
-            backgroundColor: '#3F608F',
-
+            color: '#52FFB6', // Color verde al hacer foco
+          },
+          '& .MuiInputLabel-root.Mui-shrink': {
+            color: '#52FFB6', // Color verde cuando hay texto
+          },
+          '& .MuiOutlinedInput-input': {
+            color: '#000', // Color negro del texto ingresado
           },
         },
       },
@@ -34,48 +39,74 @@ const theme = createTheme({
 function Contacto() {
   function sendEmail(e) {
     e.preventDefault();
+    Swal.fire({
+      title: 'Enviando mensaje...',
+      text: 'Por favor espere',
+      didOpen: () => {
+        Swal.showLoading()
+      }
+    })
 
     emailjs
       .sendForm(
-        'service_ktkun58',
-        'template_97th0cs',
+        'service_6161vku',
+        'template_2ak4tyn', 
         e.target,
-        'user_UZZRkDhqNS7u2f3QF9aOT'
+         'FU6mKZSQJKDSxtPKL' 
       )
       .then((res) => {
         console.log(res);
+        Swal.fire({
+          title: '¡Mensaje enviado!',
+          text: 'Gracias por contactarnos. En breve nos pondremos en contacto.',
+          icon: 'success',
+          confirmButtonText: 'Cerrar',
+          timer: 5000
+        }).then((result) => {
+          if (result.isConfirmed) {
+            e.target.reset();
+          }
+        });
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        Swal.fire({
+          title: 'Error al enviar el mensaje',
+          text: 'Por favor intente nuevamente más tarde.',
+          icon: 'error',
+          confirmButtonText: 'Cerrar'
+        });
+      });
   }
 
   const [name, setName] = useState('');
   const [leyendaName, setLeyendaName] = useState('');
   const [errorName, setErrorName] = useState(false);
-  const [botonName, setBotonName] = useState(false);
-
   const [mail, setMail] = useState('');
   const [leyendaMail, setLeyendaMail] = useState('');
   const [errorMail, setErrorMail] = useState(false);
-  const [botonMail, setBotonMail] = useState(false);
   const re = /\S+@\S+\.\S+/;
-
   const [telefono, setTelefono] = useState('');
-  const [leyendaTelefono, setLeyendaTelefono] = useState('');
-  const [errorTelefono, setErrorTelefono] = useState(false);
-  const [botonTelefono, setBotonTelefono] = useState(false);
-
   const [mensaje, setMensaje] = useState('');
-  const [leyendaMensaje, setLeyendaMensaje] = useState('');
-  const [errorMensaje, setErrorMensaje] = useState(false);
-  const [botonMensaje, setBotonMensaje] = useState(false);
 
-  const mostrarAlerta = () => {
-    Swal({
-      title: '¡Su mensaje ha sido enviado con éxito!',
-      text: 'En breve nos pondremos en contacto contigo',
-      icon: 'success',
-      timer: '10000',
-    });
+  const validateName = () => {
+    if (name.length > 45) {
+      setErrorName(true);
+      setLeyendaName('Ingrese un nombre válido');
+    } else {
+      setErrorName(false);
+      setLeyendaName('');
+    }
+  };
+
+  const validateMail = () => {
+    if (!re.test(mail)) {
+      setErrorMail(true);
+      setLeyendaMail('Ingrese un correo electrónico válido');
+    } else {
+      setErrorMail(false);
+      setLeyendaMail('');
+    }
   };
 
   return (
@@ -93,7 +124,6 @@ function Contacto() {
             <p className='texto'>También podés contactarnos directamente a nuestro correo: info@megasteel.com.ar</p>
           </div>
         </div>
-
         <div className="containerBox">
           <Box
             component="form"
@@ -117,21 +147,11 @@ function Contacto() {
                   backgroundColor: '#fff',
                   borderRadius: '4px',
                 }}
-                onChange={(e) => {
-                  setName(e.target.value);
-                  if (name.length > 45) {
-                    setErrorName(true);
-                    setLeyendaName('Ingrese un nombre válido');
-                  } else {
-                    setErrorName(false);
-                    setLeyendaName('');
-                    setBotonName(true);
-                  }
-                }}
+                onChange={(e) => setName(e.target.value)}
+                onBlur={validateName}
                 error={errorName}
                 helperText={leyendaName}
               />
-
               <TextField
                 id="outlined-required"
                 label="Correo electrónico"
@@ -143,24 +163,15 @@ function Contacto() {
                   backgroundColor: '#fff',
                   borderRadius: '8px',
                 }}
-                onChange={(e) => {
-                  setMail(e.target.value);
-                  if (!re.test(mail)) {
-                    setErrorMail(true);
-                    setLeyendaMail('Ingrese un correo electrónico válido');
-                  } else {
-                    setErrorMail(false);
-                    setLeyendaMail('');
-                    setBotonMail(true);
-                  }
-                }}
+                onChange={(e) => setMail(e.target.value)}
+                onBlur={validateMail}
                 error={errorMail}
                 helperText={leyendaMail}
               />
               <TextField
                 id="outlined-basic"
                 label="Teléfono"
-                name="telefono"
+                name="tel"
                 type="number"
                 fullWidth
                 variant="outlined"
@@ -168,23 +179,8 @@ function Contacto() {
                   backgroundColor: '#fff',
                   borderRadius: '8px',
                 }}
-                onChange={(e) => {
-                  setTelefono(e.target.value);
-                  if (telefono.length < 6 || telefono.length > 25) {
-                    setErrorTelefono(true);
-                    setLeyendaTelefono(
-                      'Ingrese un número de contacto válido'
-                    );
-                  } else {
-                    setErrorTelefono(false);
-                    setLeyendaTelefono('');
-                    setBotonTelefono(true);
-                  }
-                }}
-                error={errorTelefono}
-                helperText={leyendaTelefono}
+                onChange={(e) => setTelefono(e.target.value)}
               />
-
               <TextField
                 id="outlined-multiline-static"
                 label="Mensaje"
@@ -196,44 +192,16 @@ function Contacto() {
                   backgroundColor: '#fff',
                   borderRadius: '8px',
                 }}
-                onChange={(e) => {
-                  setMensaje(e.target.value);
-                  if (mensaje.length < 20 || mensaje.length > 5000) {
-                    setErrorMensaje(true);
-                    setLeyendaMensaje(
-                      'El mensaje debe contener un mínimo de 20 caracteres y un máximo de 5000'
-                    );
-                  } else {
-                    setErrorMensaje(false);
-                    setLeyendaMensaje('');
-                    setBotonMensaje(true);
-                  }
-                }}
-                error={errorMensaje}
-                helperText={leyendaMensaje}
+                onChange={(e) => setMensaje(e.target.value)}
               />
-              {botonName &&
-              botonTelefono &&
-              botonMail &&
-              botonMensaje ? (
-                <Button
-                  variant="contained"
-                  size="lg"
-                  className="boton"
-                  type="submit"
-                >
-                  Enviar mensaje
-                </Button>
-              ) : (
-                <Button
-                  variant="contained"
-                  size="lg"
-                  className="boton"
-                  type="submit"
-                >
-                  Enviar mensaje
-                </Button>
-              )}
+              <Button
+                variant="contained"
+                size="lg"
+                className="boton"
+                type="submit"
+              >
+                Enviar mensaje
+              </Button>
             </div>
           </Box>
         </div>

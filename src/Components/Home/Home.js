@@ -9,13 +9,13 @@ import './home.css';
 
 function Home() {
     return (
-        <div className='home'>
+        <section className='home'>
             <Header />
             <Nosotros />
             <Servicios />
             <PortfolioMobile />
             <Contacto />
-        </div>
+        </section>
     );
 }
 

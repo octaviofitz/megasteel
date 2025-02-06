@@ -19,10 +19,14 @@ function PorfolioMobile() {
         original: require('../../IMG/Trabajos/Trabajo3.webp'),
         thumbnail: require('../../IMG/Trabajos/Trabajo3.webp'),
       },
-      /* {
+      {
         original: require('../../IMG/Trabajos/Trabajo4.webp'),
         thumbnail: require('../../IMG/Trabajos/Trabajo4.webp'),
-      }, */
+      }, 
+      {
+        original: require('../../IMG/Trabajos/Trabajo4-1.webp'),
+        thumbnail: require('../../IMG/Trabajos/Trabajo4-1.webp'),
+      }, 
       {
         original: require('../../IMG/Trabajos/Trabajo5.webp'),
         thumbnail: require('../../IMG/Trabajos/Trabajo5.webp'),

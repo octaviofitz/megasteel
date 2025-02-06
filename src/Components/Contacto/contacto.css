@@ -49,6 +49,16 @@
     border-right: 4px solid #52FFB6 !important;
 }
 
+/* .contacto .swal2-close {
+    background-color: #52FFB6 !important;
+    border-color: #52FFB6 !important;
+    color: #000 !important;
+}
+
+.contacto .swal2-close:hover {
+    background-color: #52FFB6 !important;
+    border-color: #3F608F !important;
+} */
 
 @media(min-width: 768px){
     .contacto{

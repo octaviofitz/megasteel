@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../../IMG/Index/Isologo.png';
+import logo from '../../IMG/Index/Isologo.webp';
 
 import './footer.css';
 

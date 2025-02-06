@@ -1,5 +1,5 @@
 import React from 'react';
-import BotonWhatsapp from '../../../IMG/Index/Whatsapp.png';
+import BotonWhatsapp from '../../../IMG/Index/Whatsapp.webp';
 
 import './whatsapp.css';
 
