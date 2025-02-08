@@ -16,6 +16,7 @@
 .nosotros .texto{
     color: #3F608F;
     font-family: 'GothamBook';
+    text-align: justify;
 }
 
 .nosotros .negrita{

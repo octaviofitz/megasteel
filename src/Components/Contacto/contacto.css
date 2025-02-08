@@ -15,6 +15,7 @@
     color: #fff;
     padding-bottom: 2rem;
     font-family: 'GothamBook';
+    text-align: justify;
 }
 
 .contacto .texto:last-child{
@@ -63,6 +64,11 @@
 
 div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm){
     background-color: #3F608F;
+}
+
+.contacto .negrita{
+    color: #fff;
+    font-weight: 700;
 }
 @media(min-width: 768px){
     .contacto{

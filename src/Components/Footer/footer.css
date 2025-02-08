@@ -6,9 +6,12 @@
     font-size: 0.9rem;
     font-weight: 400;
     background-color: #272626;
-    text-align: center;
     font-family: 'GothamBook';
     opacity: 0.9;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer .logo{
@@ -59,7 +62,7 @@
 
 @media (min-width:1024px){
     .footer{
-        display: flex;
+        flex-direction: row;
         justify-content: space-around;
         border: none;
         align-items: center;
