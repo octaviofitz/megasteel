@@ -2,7 +2,6 @@
     background-color: #3F608F;
     color: #fff;
     padding: 2rem;
-    text-align: justify;
 }
 
 .servicios .titulo{
@@ -17,6 +16,7 @@
         color: #fff;
         font-family: 'GothamBook';
         font-size: 2vh;
+        text-align: justify;
 }
 
 .servicios .container{
@@ -31,7 +31,6 @@
     margin: 1rem;
     padding: 0.65rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    text-align: justify;
 }
 
 .servicios .container .card .img{
@@ -51,8 +50,8 @@
 .servicios .container .card .texto{
     margin-top: -0.5rem;
     color: #3F608F;
-    text-align: justify;
     font-family: 'GothamBook';
+    text-align: center;
 }
 
 @media (min-width: 768px){
