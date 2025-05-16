@@ -24,6 +24,10 @@
     color: #3F608F;
     border: transparent;
   }
+
+  .w-100{
+    margin: 10px 0;
+  }
   
   @media (min-width: 768px) {
     .navBar {
@@ -39,7 +43,7 @@
   
   @media (min-width: 1024px) {
     .navBar {
-      padding: 10px 0 12px !important;
+      padding: 15px 0 18px !important;
       display: flex;
       justify-content: space-between;
     }

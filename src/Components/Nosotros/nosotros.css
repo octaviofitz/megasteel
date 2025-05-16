@@ -24,10 +24,42 @@
     color: #3F608F;
 }
 
+.nosotros .container .img{
+    width: 50vw;
+    display: flex;
+    margin: auto;
+}
+
+.nosotros .container .tituloContainer{
+    text-align: center;
+    font-weight: 400;
+    color: #3F608F;
+    text-transform: uppercase;
+    font-family: 'GothamMedium';
+    margin: 1rem 0;
+    font-size: 3vh;
+}
+
+.nosotros .container .textoContainer{
+    text-align: justify;
+    color: #3F608F;
+    font-size: 1.05rem;
+}
+
 @media(min-width: 768px){
     .nosotros{
         padding: 8vh 10vw;
     }
+
+    .nosotros .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros .container .img{
+        width: 30vw;
+    }
+    
 }
 
 @media(min-width: 1024px){
@@ -37,10 +69,42 @@
 
     .nosotros .titulo{
         font-size: 6vh;
-
     }
 
     .nosotros .texto{
         font-size: 1.25rem;
+    }
+
+    .nosotros .container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .nosotros .container .img{
+        width: 15vw;
+    }
+
+    .nosotros .container .textoContainer{
+        font-size: 1rem;
+        font-family: 'GothamBook';
+        width: 50vw;
+    }
+}
+
+@media (min-width:1440px){
+
+    .nosotros .container .tituloContainer{
+        font-size: 2rem;
+    }
+
+    
+    .nosotros .container .textoContainer{
+        font-size: 1.1rem;
+    }
+
+    .nosotros .container .img{
+        width: 13vw;
     }
 }
