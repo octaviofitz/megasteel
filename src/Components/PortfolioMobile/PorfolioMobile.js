@@ -7,6 +7,28 @@ import './portfolioMobile.css';
 function PorfolioMobile() {
 
   const images = [
+
+    {
+      original: require('../../IMG/Trabajos/Trabajo16.webp'),
+      thumbnail: require('../../IMG/Trabajos/Trabajo16.webp'),
+    },
+
+    {
+      original: require('../../IMG/Trabajos/Trabajo17.webp'),
+      thumbnail: require('../../IMG/Trabajos/Trabajo17.webp'),
+    },
+
+    {
+      original: require('../../IMG/Trabajos/Trabajo18.webp'),
+      thumbnail: require('../../IMG/Trabajos/Trabajo18.webp'),
+    },
+
+    {
+      original: require('../../IMG/Trabajos/Trabajo19.webp'),
+      thumbnail: require('../../IMG/Trabajos/Trabajo19.webp'),
+    },
+
+
     {
       original: require('../../IMG/Trabajos/Trabajo1.webp'),
       thumbnail: require('../../IMG/Trabajos/Trabajo1.webp'),

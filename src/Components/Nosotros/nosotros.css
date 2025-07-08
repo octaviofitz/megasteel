@@ -13,6 +13,10 @@
     text-transform: uppercase;
 }
 
+
+.nosotros strong{
+    color: #3F608F;
+}
 .nosotros .texto{
     color: #3F608F;
     font-family: 'GothamBook';

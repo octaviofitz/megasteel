@@ -1,5 +1,6 @@
 .header{
-    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url('../../IMG/Index/Banner.webp') center;
+    /* background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url('../../IMG/Index/Banner.webp') center; */
+    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url('../../IMG/Trabajos/Trabajo12.webp') center;
     background-size: cover;
     width: 100%;
     height: 65vh;
