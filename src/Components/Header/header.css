@@ -1,38 +1,96 @@
-.header{
-    background: /* linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)),  */url('../../IMG/Trabajos/Trabajo12.webp') center;
-    background-size: cover;
+.header {
+    position: relative;
     width: 100%;
     height: 65vh;
-}
-
-.header .titulo{
+    overflow: hidden;
+    isolation: isolate; /* asegura capas independientes */
+  }
+  
+  /* VIDEO AL FONDO */
+  .bg-video {
+    position: absolute;
+    inset: 0;         /* top/right/bottom/left: 0 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;       /* debajo del overlay y del texto */
+    pointer-events: none; /* no intercepta clics/scroll */
+    opacity: 0.5;
+  }
+  
+  /* OVERLAY OSCURO (opcional, mejora contraste) */
+  .header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45); /* podés subir a .6 si querés más oscuro */
+    z-index: 1;
+  }
+  
+  /* TEXTO ENCIMA DEL OVERLAY */
+  .header .titulo{
+    position: relative;
+    z-index: 2;      /* por encima del overlay y el video */
     text-align: center;
     padding: 25vh 3vw 0;
     color: #fff;
     font-weight: 600;
     font-family: 'BankGothicBold';
-    font-size: 40px;
+    font-size: 50px;
+  }
+
+  .header .subtitulo{
+    color: white;
+    font-size: 30px;
+  }
+
+  .header .btn-secondary{
+    background-color: #0115ff;
+    border: none;
+    padding: 0.75rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto 0;
+    font-size: 4vw;
 }
 
-@media(min-width: 768px) {
+  
+  /* RESPONSIVE */
+  @media (min-width: 768px) {
     .header .titulo{
-        padding: 22vh 5vw 0;
-        font-size: 50px;
+      padding: 22vh 5vw 0;
+      font-size: 50px;
     }
-}
 
-
-@media(min-width: 1024px) {
+    .header .btn-secondary{
+        font-size: 2vw;
+    }
+  }
+  @media (min-width: 1024px) {
     .header .titulo{
-        padding: 15vh 5vw 0;
-        font-size: 70px;
+      padding: 20vh 5vw 0;
+      font-size: 70px;
     }
-}
-
-@media(min-width: 1440px) {
+  }
+  @media (min-width: 1440px) {
     .header .titulo{
-        padding: 21vh 5vw 0;
-        font-size: 70px;
+      padding: 21vh 5vw 0;
+      font-size: 85px;
     }
 
-}
+    /* .header .subtitulo{
+      font-size: 60px;
+    } */
+
+    .header .btn-secondary{
+        font-size: 1vw;
+    }
+
+    .header .btn-secondary:hover{
+      background-color: #3643d3;
+    }
+
+
+  }
+  

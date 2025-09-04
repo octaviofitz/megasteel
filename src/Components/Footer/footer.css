@@ -1,6 +1,6 @@
 .footer{
-     /* border-top: 1px solid #52FFB6;
-     border-bottom: 1px solid #52FFB6; */
+     /* border-top: 1px solid #efca16;
+     border-bottom: 1px solid #efca16; */
      margin-bottom: 0;
     padding: 0.75rem;
     font-size: 0.9rem;
@@ -33,13 +33,13 @@
 }
 
 .footer .galide .bold{
-    color: #3F608F;
+    color: #efca16;
     font-weight: 900;
     text-decoration: none;
 }
 
 .footer .bold:hover{
-    color: #52FFB6;
+    color: #0000ff;
 }
 
 @media(min-width: 768px){

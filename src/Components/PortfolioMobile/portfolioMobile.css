@@ -2,13 +2,13 @@
     background-color: #fff;
     padding: 2rem;
     padding-bottom: 2rem;
-    border-top: 4px solid #52FFB6;
-    border-bottom: 4px solid #52FFB6;
+    border-top: 4px solid #efca16;
+    border-bottom: 4px solid #efca16;
 }
 
 .portfolioMobile .titulo{
     font-size: 4.8vh;
-    color: #3F608F;
+    color: #1C404E;
     margin-bottom: 0.8rem;
     padding: 2rem -2rem 2rem;
     font-family: 'GothamMedium';
@@ -19,7 +19,7 @@
     padding: 0 -2rem 2rem;
     margin-bottom: 2rem;
     font-family: 'GothamBook';
-    color: #3F608F;
+    color: #1C404E;
     text-align: justify;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .image-gallery-svg:hover{
-    fill: #52FFB6 !important;
-    color: #52FFB6 !important;
+    fill: #efca16 !important;
+    color: #efca16 !important;
 }
 
 
