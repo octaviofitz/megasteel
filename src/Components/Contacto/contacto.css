@@ -1,5 +1,5 @@
 .contacto{
-    background-color: #0000ff;
+    background-color: #275391;
     padding: 2rem;
 }
 
@@ -31,13 +31,14 @@
     display: flex;
     margin: 1.5rem auto;
     background-color: #fff;
-    color: #3F608F;
+    color: #275391;
     font-size: 0.9rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .contacto .boton:hover{
     color: #efca16;
+    font-weight: 600;
 }
 
 .containerIMG{
@@ -67,7 +68,7 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm){
 }
 
 .contacto .negrita{
-    color: #fff;
+    color: #efca16;
     font-weight: 700;
 }
 @media(min-width: 768px){

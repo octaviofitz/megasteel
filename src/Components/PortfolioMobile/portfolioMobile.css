@@ -8,7 +8,7 @@
 
 .portfolioMobile .titulo{
     font-size: 4.8vh;
-    color: #1C404E;
+    color: #275391;
     margin-bottom: 0.8rem;
     padding: 2rem -2rem 2rem;
     font-family: 'GothamMedium';
@@ -19,7 +19,7 @@
     padding: 0 -2rem 2rem;
     margin-bottom: 2rem;
     font-family: 'GothamBook';
-    color: #1C404E;
+    color: #275391;
     text-align: justify;
 }
 

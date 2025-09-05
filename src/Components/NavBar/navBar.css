@@ -1,69 +1,86 @@
 .navBar {
-    padding: 8px 3px 10px;
+  padding: 8px 3px 10px;
+}
+
+.navBar .logo {
+  height: 2vh !important;
+}
+
+.navBar .link {
+  color: #275391;
+  text-align: center;
+  padding: 10px;
+  font-family: 'GothamMedium';
+  text-transform: uppercase;
+
+  /* 🔽 Subrayado custom con control total */
+  position: relative;
+  display: inline-block;     /* asegura que el ::after tome el ancho del texto */
+  text-decoration: none;     /* sin subrayado nativo */
+}
+
+.navBar .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #efca16;
+  bottom: -8px;              /* 🔑 bajá o subí la línea (ej: -6, -10) */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s ease;
+}
+
+.navBar .link:hover::after,
+.navBar .link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.navbar-toggler {
+  font-size: 0.9rem;
+  color: #3F608F;
+  border: transparent;
+}
+
+.w-100 {
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .navBar {
+    padding: 0.4rem 1rem 0.7rem !important;
   }
-  
+
   .navBar .logo {
-    height: 2vh !important;
+    height: 4vh !important;
+    padding-left: 2rem !important;
+    margin-top: 0rem !important;
   }
-  
+}
+
+@media (min-width: 1024px) {
+  .navBar {
+    padding: 15px 0 18px !important;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navBar .logo {
+    width: 17vw;
+  }
+
   .navBar .link {
-    color: #0115ff;
-    text-align: center;
-    padding: 10px;
-    font-family: 'GothamMedium';
-    text-transform: uppercase;
-  }
-  
-  .navBar .link:hover {
-    text-decoration: 2px underline #efca16;
-    text-underline-offset: 5px;
-  }
-  
-  .navbar-toggler {
-    font-size: 0.9rem;
-    color: #3F608F;
-    border: transparent;
-  }
-
-  .w-100{
-    margin: 10px 0;
-  }
-  
-  @media (min-width: 768px) {
-    .navBar {
-      padding: 0.4rem 1rem 0.7rem !important;
-    }
-  
-    .navBar .logo {
-      height: 4vh !important;
-      padding-left: 2rem !important;
-      margin-top: 0rem !important;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .navBar {
-      padding: 15px 0 18px !important;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .navBar .logo{
-      width: 17vw;
-    }
-  
-    .navBar .link {
-      padding: 3px 10px;
+    padding: 3px 10px;
     border-right: 1px solid #efca16;
-    }
-
-    .navBar .link:last-child{
-      border-right: none;
-    }
-  
-    /* Añadimos esta regla para alinear los enlaces a la derecha */
-    .navBar .navbar-collapse {
-      justify-content: flex-end;
-    }
   }
-  
+
+  .navBar .link:last-child {
+    border-right: none;
+  }
+
+  /* Alinear enlaces a la derecha en desktop */
+  .navBar .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
