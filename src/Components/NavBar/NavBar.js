@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import Logo from '../../IMG/Index/Logo.webp';
+import Logo from '../../IMG/Index/Logo.png';
 
 import './navBar.css';
 

@@ -3,11 +3,11 @@
 }
 
 .navBar .logo {
-  height: 2vh !important;
+  height: 3.75vh !important;
 }
 
 .navBar .link {
-  color: #275391;
+  color: #0115ff;
   text-align: center;
   padding: 10px;
   font-family: 'GothamMedium';
@@ -22,11 +22,12 @@
 .navBar .link::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 15%;
   right: 0;
-  height: 2px;
+  height: 3px;
+  width: 70%;
   background: #efca16;
-  bottom: -8px;              /* 🔑 bajá o subí la línea (ej: -6, -10) */
+  bottom: -1.5px;              /* 🔑 bajá o subí la línea (ej: -6, -10) */
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .2s ease;
@@ -39,8 +40,12 @@
 
 .navbar-toggler {
   font-size: 0.9rem;
-  color: #3F608F;
+  color: #0115ff;
   border: transparent;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color: #0115ff;
 }
 
 .w-100 {
