@@ -19,23 +19,23 @@ const theme = createTheme({
               borderRight: '2px solid transparent',
             },
             '&:hover fieldset': {
-              borderBottom: '2px solid #52FFB6',
-              borderRight: '2px solid #52FFB6',
+              borderBottom: '2px solid #efca16',
+              borderRight: '2px solid #efca16',
             },
             '&.Mui-focused fieldset': {
-              borderBottom: '4px solid #52FFB6',
-              borderRight: '4px solid #52FFB6',
+              borderBottom: '4px solid #efca16',
+              borderRight: '4px solid #efca16',
             },
           },
           '& .MuiInputLabel-root': {
             color: '#000',
           },
           '& .MuiInputLabel-root.Mui-focused': {
-            color: '#52FFB6',
-            backgroundColor: '#3F608F'
+            color: '#efca16',
+            backgroundColor: '#275391'
           },
           '& .MuiInputLabel-root.Mui-shrink': {
-            color: '#52FFB6',
+            color: '#efca16',
           },
           '& .MuiOutlinedInput-input': {
             color: '#000',
